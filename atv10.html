@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pessoa = [
+        {
+            nome: "Thiago",
+            idade: 30
+        },
+        {
+            nome: "Júlia",
+            idade: 16
+        }
+        ]   
+
+        function verificarIdade(pessoa){
+            var maior = 0
+            var nomeMaior
+
+            for(posicao in pessoa){
+                if(pessoa[posicao].idade > maior ){
+                    maior = pessoa[posicao].idade
+                    nomeMaior = pessoa[posicao].nome
+                }
+            }
+            console.log(nomeMaior)
+
+        }
+        verificadorIdade(pessoa)
+
+    </script>
+</body>
+</html>
